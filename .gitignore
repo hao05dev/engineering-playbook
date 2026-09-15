@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# VitePress output
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
