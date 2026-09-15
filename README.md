@@ -1,84 +1,31 @@
-# AI-SDLC Engineering Playbook
+# AI Software Engineering Knowledge Base
 
-A practical, professional engineering playbook and documentation website for building software with AI — from requirements and technical design to implementation, automated testing, human review, and delivery.
+Kho tri thức kỹ thuật phần mềm chuẩn hóa dành cho lập trình viên và các tác nhân AI (AI Coding Agents). Cung cấp hướng dẫn chi tiết, biểu mẫu thực thi và bộ tiêu chuẩn kỹ thuật quốc tế (IEEE 29148, OMG UML, C4 Model, arc42, OpenAPI 3.1, NN/g Usability, Google Doc Standards) xuyên suốt 12 chuyên ngành kỹ thuật phần mềm.
 
-Website deployed statically to GitHub Pages with full bilingual support (**English** and **Tiếng Việt**).
-
----
-
-## Tech Stack
-- **Framework**: [VitePress](https://vitepress.dev/) 1.6+ (Vue 3, TypeScript, Markdown-it)
-- **Search**: Built-in client-side MiniSearch (Bilingual EN & VI offline search)
-- **CI/CD**: GitHub Actions (`.github/workflows/deploy.yml`)
-- **Hosting**: GitHub Pages
+Hỗ trợ song ngữ đầy đủ: **English** & **Tiếng Việt**.
 
 ---
 
-## Getting Started Locally
+## 🌐 Link Truy Cập (Live Documentation)
 
-### 1. Install Dependencies
-```bash
-npm install
-```
+👉 **Website chính thức**: [https://hao05dev.github.io/engineering-playbook/](https://hao05dev.github.io/engineering-playbook/)
 
-### 2. Start Development Server
-```bash
-npm run docs:dev
-```
-Open [http://localhost:5173](http://localhost:5173) in your browser.
-
-### 3. Build Static Site
-```bash
-npm run docs:build
-```
-The static HTML/CSS/JS bundle will be generated into `docs/.vitepress/dist/`.
-
-### 4. Preview Production Build Locally
-```bash
-npm run docs:preview
-```
+- 🇬🇧 **English Documentation**: [https://hao05dev.github.io/engineering-playbook/en/](https://hao05dev.github.io/engineering-playbook/en/)
+- 🇻🇳 **Tài liệu Tiếng Việt**: [https://hao05dev.github.io/engineering-playbook/vi/](https://hao05dev.github.io/engineering-playbook/vi/)
 
 ---
 
-## Documentation Structure
+## 📚 Nội Dung Sơ Lược (12 Chuyên Ngành)
 
-```
-docs/
-├── en/                     # English Documentation
-│   ├── introduction.md
-│   ├── core-principles.md
-│   ├── quality-gates.md
-│   ├── agent-setup.md
-│   ├── coding-standards.md
-│   ├── agent-rules.md
-│   ├── prompting.md
-│   ├── domain-exploration.md
-│   ├── product-requirements.md
-│   ├── technical-design.md
-│   ├── task-breakdown.md
-│   ├── implementation-planning.md
-│   ├── code-generation.md
-│   ├── testing.md
-│   ├── human-review.md
-│   ├── bug-fix.md
-│   └── commit.md
-└── vi/                     # Vietnamese Documentation (1:1 Mirrored)
-    ├── introduction.md
-    └── ...
-```
-
----
-
-## Deployment to GitHub Pages
-
-This repository includes an automated GitHub Actions workflow (`.github/workflows/deploy.yml`).
-
-To enable GitHub Pages in your repository:
-1. Go to repository **Settings** -> **Pages**.
-2. Under **Build and deployment** -> **Source**, select **GitHub Actions**.
-3. Push to `main` branch to trigger automated deployment.
-
----
-
-## License
-MIT License. Created by [hao05dev](https://github.com/hao05dev).
+1. **01 — AI-SDLC Playbook**: Quy trình phát triển phần mềm toàn diện cùng AI.
+2. **02 — Domain & Business Analysis**: Phân tích nghiệp vụ, DDD, ngôn ngữ chung & bất biến.
+3. **03 — Requirements Engineering**: Kỹ thuật yêu cầu chuẩn ISO/IEC/IEEE 29148:2018 (BRD, PRD, SRS).
+4. **04 — System Analysis & UML**: Mô hình hóa hệ thống chuẩn OMG UML 2.5.1 (Use Case, Sequence, State, Class).
+5. **05 — Software Architecture**: Kiến trúc phần mềm theo C4 Model & khung chuẩn arc42.
+6. **06 — Architecture Decisions (ADR)**: Nhật ký quyết định kiến trúc chuẩn MADR 3.0.0.
+7. **07 — Database Engineering**: Thiết kế CSDL quan hệ chuẩn 3NF, chiến lược index & Flyway migrations.
+8. **08 — API Engineering**: Thiết kế RESTful API, hợp đồng OpenAPI 3.1 & Idempotency.
+9. **09 — UI/UX Engineering**: Trải nghiệm người dùng theo NN/g, 4 trạng thái UI & chuẩn tiếp cận WCAG 2.2 AA.
+10. **10 — Documentation Engineering**: Kỹ thuật tài liệu Docs-as-Code theo chuẩn Google Developer Docs.
+11. **11 — AI Collaboration Protocol**: Giao thức hợp tác 6 giai đoạn, phân loại thông tin & hội đồng AI Reviewer.
+12. **12 — AI Context Files & Standards**: Bộ 10 tệp ngữ cảnh AI, thư viện prompt mẫu & ma trận tiêu chuẩn quốc tế.
