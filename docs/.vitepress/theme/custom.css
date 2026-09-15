@@ -15,7 +15,69 @@
   --vp-c-brand-soft: rgba(59, 130, 246, 0.18);
 }
 
-/* Custom Workflow Diagram & Hero Styles */
+/* Workflow and Information Classification Badges */
+.badge-step {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  background-color: var(--vp-c-brand-1);
+  color: #ffffff;
+  margin-right: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-confirmed {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  background-color: #16a34a;
+  color: #ffffff;
+  margin-right: 0.4rem;
+  text-transform: uppercase;
+}
+
+.badge-assumption {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  background-color: #d97706;
+  color: #ffffff;
+  margin-right: 0.4rem;
+  text-transform: uppercase;
+}
+
+.badge-proposal {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  background-color: #7c3aed;
+  color: #ffffff;
+  margin-right: 0.4rem;
+  text-transform: uppercase;
+}
+
+.badge-question {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  background-color: #dc2626;
+  color: #ffffff;
+  margin-right: 0.4rem;
+  text-transform: uppercase;
+}
+
+/* Workflow Cards */
 .workflow-stepper {
   display: flex;
   flex-direction: column;
@@ -28,24 +90,11 @@
   border-radius: 8px;
   padding: 1.25rem;
   background-color: var(--vp-c-bg-soft);
-  transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
 .workflow-card:hover {
   border-color: var(--vp-c-brand-1);
-}
-
-.badge-step {
-  display: inline-block;
-  font-size: 0.75rem;
-  font-weight: 700;
-  padding: 0.2rem 0.55rem;
-  border-radius: 4px;
-  background-color: var(--vp-c-brand-1);
-  color: #ffffff;
-  margin-right: 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
 }
 
 .step-heading {
@@ -64,6 +113,26 @@
   margin: 0;
 }
 
+/* Prompt Box Callouts */
+.ai-prompt-box {
+  border: 1px solid var(--vp-c-brand-1);
+  background-color: var(--vp-c-brand-soft);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+}
+
+.ai-prompt-header {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--vp-c-brand-1);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 /* Code block typography enhancement */
 .vp-doc pre code {
   font-size: 0.9em;
@@ -76,10 +145,12 @@
   display: table;
 }
 
-/* Hero Section Custom Buttons */
-.hero-action-buttons {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-top: 1.5rem;
+/* Reference attribution box */
+.ref-box {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-left: 4px solid var(--vp-c-brand-1);
+  background-color: var(--vp-c-bg-alt);
+  font-size: 0.9rem;
+  border-radius: 0 6px 6px 0;
 }

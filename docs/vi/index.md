@@ -2,77 +2,65 @@
 layout: home
 
 hero:
-  name: "AI-SDLC Engineering Playbook"
-  text: "Quy trình Kỹ thuật Phần mềm Chuẩn mực cùng AI"
-  tagline: "Quy trình kỹ thuật thực chiến để xây dựng phần mềm với AI — từ yêu cầu sản phẩm, thiết kế kỹ thuật đến triển khai mã nguồn, kiểm thử, review và bàn giao."
+  name: "AI Software Engineering Knowledge Base"
+  text: "Kho Tri Thức Kỹ Nghệ Phần Mềm Cùng AI"
+  tagline: "Từ ý tưởng kinh doanh đến sản phẩm sẵn sàng triển khai — kho tri thức chuẩn hóa hướng dẫn AI Agent cách cộng tác cùng kỹ sư xuyên suốt vòng đời phần mềm."
   image:
     src: /logo.svg
-    alt: AI-SDLC Engineering Playbook
+    alt: AI Software Engineering Knowledge Base
   actions:
     - theme: brand
-      text: Bắt đầu (Giới thiệu)
+      text: Khám phá Tài liệu
       link: /vi/introduction
     - theme: alt
-      text: Quy trình 11 bước
-      link: /vi/domain-exploration
+      text: Giao thức Hợp tác AI
+      link: /vi/collaboration/
     - theme: alt
       text: Read in English
       link: /en/
 
 features:
+  - icon: 🎯
+    title: 01 — Playbook Thực thi AI-SDLC
+    details: Quy trình 11 bước đã được kiểm chứng từ khám phá domain, thiết kế kỹ thuật, sinh code, chạy test đến review và commit.
+    link: /vi/introduction
+  - icon: 🔍
+    title: 02 & 03 — Nghiệp vụ & Yêu cầu
+    details: Khám phá domain chuyên sâu, quy tắc nghiệp vụ, phân tích stakeholder và kỹ nghệ yêu cầu theo chuẩn IEEE 29148.
+    link: /vi/domain-analysis/
   - icon: 📐
-    title: 1. Giai đoạn Thiết kế (Design Phase)
-    details: Khám phá domain & ý tưởng, đặc tả yêu cầu sản phẩm (PRD), thiết kế kiến trúc kỹ thuật và phân rã task chi tiết.
-  - icon: ⚡
-    title: 2. Giai đoạn Thực thi (Execution Phase)
-    details: Lập kế hoạch triển khai, kỹ thuật prompt S.C.O.P.E, sinh code có kiểm soát, chạy test tự động và chẩn đoán bug.
-  - icon: 🔒
-    title: 3. Chất lượng & Quản trị (Governance)
-    details: Quy tắc Zero-trust review, cổng kiểm soát chất lượng (Quality Gates), chuẩn mực lập trình và ràng buộc agent.
+    title: 04 & 05 — UML & Kiến trúc Hệ thống
+    details: Sơ đồ OMG UML chuẩn mực, mô hình C4 Model, khung tài liệu arc42 và phân tích đánh đổi thuộc tính chất lượng.
+    link: /vi/architecture/
+  - icon: 🗄️
+    title: 06 & 07 — Quyết định ADR & CSDL
+    details: Hồ sơ quyết định kiến trúc (MADR) và quy trình mô hình hóa dữ liệu (Domain ➔ Conceptual ➔ Logical ➔ Physical SQL).
+    link: /vi/database/
+  - icon: 🔌
+    title: 08 & 09 — Kỹ nghệ API & Thiết kế UI/UX
+    details: Hợp đồng REST chuẩn OpenAPI 3.1 và hành trình người dùng, wireframe, thiết kế trạng thái theo chuẩn Nielsen Norman Group.
+    link: /vi/api/
+  - icon: 🤖
+    title: 10 & 11 — Tài liệu & Giao thức AI
+    details: Chuẩn tài liệu Google, vòng đời hợp tác 6 giai đoạn, chuẩn phân loại thông tin và ma trận truy vết yêu cầu.
+    link: /vi/collaboration/
 ---
 
-## Tổng quan Quy trình 11 bước AI-SDLC
-
-Phương pháp luận AI-SDLC chia quy trình phát triển phần mềm thành hai giai đoạn cốt lõi: **Thiết kế (Design)** và **Thực thi (Execution)**.
+## Vòng đời Kỹ nghệ Phần mềm Toàn diện
 
 ```
-  [01 Khám phá Domain & Ý tưởng]
-               │
-               ▼
-  [02 Định nghĩa Yêu cầu Sản phẩm]
-               │
-               ▼
-  [03 Thiết kế Kỹ thuật (Technical Design)]
-               │
-               ▼
-  [04 Phân kỳ & Phân rã Task]
-               │
-               ▼
-  [05 Kế hoạch Thực thi (Planning)]
-               │
-               ▼
-  [06 Prompt & AI Thực thi] ──► [07 Sinh Mã nguồn (AI Code Gen)]
-                                            │
-                                            ▼
-                                   [08 Tự động Chạy Tests]
-                                            │
-                                            ▼
-  [11 Commit & Push] ◄── [10 Sửa Bug] ◄── [09 Review & Phê duyệt]
+  [ KHÁM PHÁ ] ──► [ YÊU CẦU ] ──► [ MÔ HÌNH UML ] ──► [ KIẾN TRÚC ]
+                                                             │
+                                                             ▼
+  [ BÀN GIAO ] ◄── [ REVIEW ] ◄── [ KIỂM THỬ ] ◄── [ CODE ] ◄── [ CSDL & API ]
 ```
 
-### Nguyên tắc Cốt lõi
+### Triết lý Hợp tác Cốt lõi
 
-> **"AI là trợ lý phát triển phần mềm, không phải là chủ sở hữu mã nguồn."**
+> **"AI đóng vai trò là Chuyên viên Phân tích Nghiệp vụ, Kiến trúc sư Hệ thống và Trợ lý Kỹ thuật — không chỉ đơn thuần là bộ sinh code."**
 > 
-> Kỹ sư phần mềm chịu trách nhiệm hoàn toàn về kiến trúc hệ thống, tính đúng đắn của nghiệp vụ, bảo mật và khả năng bảo trì. AI đóng vai trò là động cơ tăng tốc nghiên cứu, phác thảo và sinh code theo chỉ dẫn.
-
-<div class="workflow-stepper">
-  <div class="workflow-card">
-    <div class="step-heading"><span class="badge-step">Giai đoạn 1</span> Giai đoạn Thiết kế (Bước 01 - 04)</div>
-    <p class="step-desc">Xác lập bối cảnh nghiệp vụ, viết đặc tả yêu cầu rõ ràng, xây dựng mô hình dữ liệu/kiến trúc và chia nhỏ phạm vi thành các task có thể kiểm chứng độc lập.</p>
-  </div>
-  <div class="workflow-card">
-    <div class="step-heading"><span class="badge-step">Giai đoạn 2</span> Giai đoạn Thực thi (Bước 05 - 11)</div>
-    <p class="step-desc">Lập implementation plan, viết prompt cấu trúc, sinh code theo ngữ cảnh hẹp, chạy automated test suite, review nghiêm ngặt bởi con người, xử lý bug và commit thay đổi sạch sẽ.</p>
-  </div>
-</div>
+> AI tuyệt đối không tự biến các giả định chưa được kiểm chứng thành quy tắc nghiệp vụ đã chốt. Mọi mẩu thông tin đều được phân loại rõ ràng:
+> - <span class="badge-confirmed">[CONFIRMED]</span> Đã được kỹ sư con người xác nhận tường minh.
+> - <span class="badge-assumption">[ASSUMPTION]</span> Giả định tạm thời do thiếu thông tin bối cảnh.
+> - <span class="badge-proposal">[PROPOSAL]</span> Đề xuất giải pháp hoặc kiến trúc do AI đưa ra.
+> - <span class="badge-question">[QUESTION]</span> Câu hỏi cần làm rõ trước khi bắt đầu thiết kế.

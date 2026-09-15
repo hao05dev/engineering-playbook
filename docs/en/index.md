@@ -2,77 +2,65 @@
 layout: home
 
 hero:
-  name: "AI-SDLC Engineering Playbook"
-  text: "Practical Engineering Workflow with AI"
-  tagline: "A practical engineering workflow for building software with AI — from requirements and technical design to implementation, testing, review, and delivery."
+  name: "AI Software Engineering Knowledge Base"
+  text: "Engineering Knowledge for Humans & AI Agents"
+  tagline: "From business idea to production-ready software — a structured knowledge base teaching AI agents how to collaborate with developers across the software lifecycle."
   image:
     src: /logo.svg
-    alt: AI-SDLC Engineering Playbook
+    alt: AI Software Engineering Knowledge Base
   actions:
     - theme: brand
-      text: Get Started (Introduction)
+      text: Get Started
       link: /en/introduction
     - theme: alt
-      text: 11-Step Workflow
-      link: /en/domain-exploration
+      text: AI Collaboration Protocol
+      link: /en/collaboration/
     - theme: alt
       text: Đọc bằng Tiếng Việt
       link: /vi/
 
 features:
+  - icon: 🎯
+    title: 01 — AI-SDLC Playbook
+    details: The proven 11-step execution workflow from domain discovery to technical design, code generation, testing, review, and commit.
+    link: /en/introduction
+  - icon: 🔍
+    title: 02 & 03 — Domain & Requirements
+    details: Deep domain discovery, business rules, stakeholder analysis, and IEEE 29148 requirements engineering.
+    link: /en/domain-analysis/
   - icon: 📐
-    title: 1. Design Phase
-    details: Domain exploration, precise product requirements (PRD), architectural technical designs, and deterministic task breakdown.
-  - icon: ⚡
-    title: 2. Execution Phase
-    details: Implementation planning, structured S.C.O.P.E prompting, AI code generation, automated test execution, and bug diagnostics.
-  - icon: 🔒
-    title: 3. Quality & Governance
-    details: Zero-trust human reviews, explicit quality gates, coding standards, and rigorous agent constraint rules.
+    title: 04 & 05 — UML & Architecture
+    details: OMG UML diagrams, C4 Model software architecture, arc42 documentation framework, and quality attribute trade-offs.
+    link: /en/architecture/
+  - icon: 🗄️
+    title: 06 & 07 — ADRs & Database
+    details: Architectural Decision Records (MADR) and systematic data modeling (Domain ➔ Conceptual ➔ Logical ➔ Physical SQL).
+    link: /en/database/
+  - icon: 🔌
+    title: 08 & 09 — API & UI/UX Design
+    details: OpenAPI 3.1 REST contracts and Nielsen Norman Group (NN/g) user journeys, wireframes, and interaction states.
+    link: /en/api/
+  - icon: 🤖
+    title: 10 & 11 — Docs & AI Protocol
+    details: Google engineering doc standards, the 6-stage AI collaboration protocol, information classification, and traceability.
+    link: /en/collaboration/
 ---
 
-## 11-Step AI-SDLC Workflow Overview
-
-The AI-SDLC methodology divides software engineering into two synchronized phases: **Design** and **Execution**.
+## The End-to-End Engineering Lifecycle
 
 ```
-  [01 Domain Exploration]
-            │
-            ▼
-  [02 Product Requirements]
-            │
-            ▼
-  [03 Technical Design]
-            │
-            ▼
-  [04 Task Breakdown]
-            │
-            ▼
-  [05 Implementation Planning]
-            │
-            ▼
-  [06 Prompt & AI Execute] ──► [07 AI Code Generation]
-                                       │
-                                       ▼
-                               [08 AI Run Tests]
-                                       │
-                                       ▼
-  [11 Commit & Push] ◄── [10 Bug Fix] ◄── [09 Human Review]
+  [ DISCOVER ] ──► [ REQUIREMENTS ] ──► [ MODEL & UML ] ──► [ ARCHITECTURE ]
+                                                                     │
+                                                                     ▼
+  [ DELIVER ] ◄── [ REVIEW ] ◄── [ TEST ] ◄── [ IMPLEMENT ] ◄── [ DATA & API ]
 ```
 
-### Core Principle
+### Core Collaboration Paradigm
 
-> **"AI is a development assistant, not the owner of the code."**
+> **"AI is a Software Analyst, System Architect, and Engineering Assistant — not merely a code generator."**
 > 
-> Software engineers are responsible for system architecture, business correctness, security, and maintainability. AI acts as an ultra-fast drafting engine and implementation partner.
-
-<div class="workflow-stepper">
-  <div class="workflow-card">
-    <div class="step-heading"><span class="badge-step">Phase 1</span> Design Phase (Steps 01 - 04)</div>
-    <p class="step-desc">Establish clear domain context, write unambiguous requirement specifications, formulate data/system architectures, and divide scope into small, verifiable chunks.</p>
-  </div>
-  <div class="workflow-card">
-    <div class="step-heading"><span class="badge-step">Phase 2</span> Execution Phase (Steps 05 - 11)</div>
-    <p class="step-desc">Create technical implementation plans, construct structured prompts, generate scoped code, run automated test suites, conduct strict human reviews, diagnose failures, and commit clean changes.</p>
-  </div>
-</div>
+> The AI must never silently convert unverified assumptions into confirmed business rules. Every piece of business knowledge is classified as:
+> - <span class="badge-confirmed">[CONFIRMED]</span> Explicitly agreed upon by the human developer.
+> - <span class="badge-assumption">[ASSUMPTION]</span> An assumption made due to missing context.
+> - <span class="badge-proposal">[PROPOSAL]</span> A solution or architecture proposed by AI.
+> - <span class="badge-question">[QUESTION]</span> An open question requiring clarification before design.
